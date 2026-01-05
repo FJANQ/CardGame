@@ -73,7 +73,7 @@ private:
     static void generateInitialStack(std::shared_ptr<GameModel> model) {
         // 初始底牌设为 4 (方块)，配合桌面的 2 和 Q 测试逻辑
         auto stackCard = std::make_shared<CardModel>(
-            2001, CardFaceType::FOUR, CardSuitType::DIAMONDS
+            2001, CardFaceType::THREE, CardSuitType::DIAMONDS
         );
         // 位置由 Controller 统一设置，这里只存数据
         model->setStackTopCard(stackCard);
@@ -86,7 +86,7 @@ private:
             // 这里简单生成一些红桃牌
             auto stockCard = std::make_shared<CardModel>(
                 3000 + i,
-                (CardFaceType)(5 + i), // 5, 6, 7...
+                (CardFaceType)(4 + i), // 5, 6, 7...
                 CardSuitType::HEARTS
             );
             model->addStockCard(stockCard);
