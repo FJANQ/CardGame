@@ -1,0 +1,22 @@
+# 忽略 Visual Studio 临时文件
+.vs/
+Debug.win32/
+Release.win32/
+x64/
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.ipch
+*.ap
+
+# 忽略编译生成的临时文件
+obj/
+bin/
+temp/
+library/
+local/
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
